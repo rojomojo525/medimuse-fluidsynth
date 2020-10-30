@@ -46,9 +46,9 @@ public final class MidiDispatcher extends MidiReceiver {
         }
 
         /**
-         * Called to disconnect a {@link MidiReceiver} from the sender
+         * Called to resetSynth a {@link MidiReceiver} from the sender
          *
-         * @param receiver the receiver to disconnect
+         * @param receiver the receiver to resetSynth
          */
         @Override
         public void onDisconnect(MidiReceiver receiver) {

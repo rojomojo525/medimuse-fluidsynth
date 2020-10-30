@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +21,16 @@
         </activity>
 
         <service
-            android:name="MidiScope"
+            android:name=".MidiScope"
             android:permission="android.permission.BIND_MIDI_DEVICE_SERVICE">
             <intent-filter>
-                <action android:name="android.media.midi.MidiDeviceService"/>
+                <action android:name="android.media.midi.MidiDeviceService" />
             </intent-filter>
+
             <meta-data
                 android:name="android.media.midi.MidiDeviceService"
-                android:resource="@xml/scope_device_info"/>
+                android:resource="@xml/scope_device_info" />
         </service>
-
     </application>
 
 </manifest>
