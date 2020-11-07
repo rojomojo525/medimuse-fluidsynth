@@ -1,3 +1,6 @@
 [submodule "external_libraries/oboe"]
 	path = external_libraries/oboe
 	url = git@github.com:google/oboe.git
+[submodule "external_libraries/fluidsynth-pd"]
+	path = external_libraries/fluidsynth-pd
+	url = git@github.com:openmusicsoftware/fluidsynth-pd.git

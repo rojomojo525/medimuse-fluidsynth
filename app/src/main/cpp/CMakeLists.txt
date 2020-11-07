@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set (OBOE_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../../external_libraries/oboe)
+set (FLUIDSYNTH-PD ${CMAKE_CURRENT_LIST_DIR}/../../../../external_libraries/fluidsynth-pd)
 
 # Debug utilities
 set (DEBUG_UTILS_PATH "${OBOE_DIR}/samples/debug-utils")
@@ -32,6 +33,7 @@ set (APP_SOURCES
 
 
 add_subdirectory(${OBOE_DIR} ./oboe)
+add_subdirectory(${FLUIDSYNTH-PD} ./fluidsynthpd)
 
 include_directories( ${OBOE_DIR}/include ${OBOE_DIR}/samples/shared)
 
